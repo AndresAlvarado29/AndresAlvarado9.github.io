@@ -5,19 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="styles.css" />
-  <script type="module" src="script.js"></script>
 </head>
 <body>
 	<header>
 		<h1>Bienvenido a mi página</h1>
-    <img src="https://cataas.com/cat" alt="Mi imagen animada" id="mi-elemento">
+		<!-- se encarga de poner una imagen y rotarla en 360 grados -->
+    <img class="rotacion" src="https://cataas.com/cat" alt="Mi imagen animada" id="mi-elemento">
 		<nav>
 			<ul>
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Acerca de</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li><a href="/carrucel.html" aria-current="page">Pagina de carrucel</a></li>
         <li><a href="/" aria-current="page">Home</a></li>
-        <li><a href="/page2.html">Other page</a></li>
+        <li><a href="/page2.html" aria-current="page">Other page</a></li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" aria-current="page">Pagina prueba</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -29,7 +28,6 @@
 		</section>
 		<section>
 			<h2>Mis habilidades</h2>
-      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo de Google">
 </body>
 			<ul>
 				<li>HTML5</li>
@@ -38,6 +36,14 @@
 				<li>jQuery</li>
 			</ul>
 		</section>
+		<nav>
+	<!-- pone una imagen en este caso la de google -->
+	<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo de Google">
+	<!-- script que activa el servicio de busqueda de google-->
+	<script async src="https://cse.google.com/cse.js?cx=739dbdda99471405c">
+	</script>
+	<div class="gcse-search"></div>
+		</nav>
 	</main>
 	<footer>
 		<p>Derechos de autor &copy; 2023 - Todos los derechos reservados</p>
