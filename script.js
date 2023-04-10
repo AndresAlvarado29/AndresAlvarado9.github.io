@@ -12,3 +12,11 @@ setInterval(() => {
   //hace lo contrario de .remove
   images[currentImage].classList.add('active');
 }, 3000);
+
+const images1 = document.querySelectorAll('.carousel1 img');
+let currentImage1 = 0;
+setInterval(() => {
+  images1[currentImage1].classList.remove('active');
+  currentImage1 = (currentImage1 + 1) % images1.length;
+  images1[currentImage1].classList.add('active');
+}, 3000);

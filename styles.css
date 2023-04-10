@@ -95,6 +95,10 @@ h1 {
   /*hace que las imagenes que desbordan el contenedor se have visibles*/
   overflow: visible; 
 }
+.carousel1 {  
+  position: relative;
+  overflow: visible; 
+}
 /*aplica a todas las imagenes dentro del carrucel*/
 .carousel img { 
   /*tamaño en pixeles*/
@@ -111,9 +115,21 @@ h1 {
   /* establece una trancicion para que la opacidad de las imagenes cambie gradualmente*/
   transition: opacity 1s ease-in-out;
 }
+.carousel1 img { 
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
  /* se aplica a la imagen activa*/
 .carousel img.active {
   /*establece la opacidad de la imagen activa para que se miestre*/
+  opacity: 1;
+}
+.carousel1 img.active {
   opacity: 1;
 }
 /*aqui se ponle la posicion del enlace*/
@@ -122,6 +138,34 @@ position: absolute;
 top: 20px;
 right: 5px;
 }
+.left-section {
+  width: 50%;
+  float: left;
+  background-color: #f2f2f2;
+  height: 100%;
+}
 
+/* Establece las propiedades de la sección derecha */
+.right-section {
+  width: 50%;
+  float: right;
+  background-color: #ccc;
+  height: 100%;
+}
+/*informacion de la lista en la parte izquierda*/
+.lista-left {
+ position: absolute;
+ float: left;
+ top:500px;
+ height: 50%;
+}
+/*informacion de la lista en la parte derecha*/
+.lista-right {
+  position: absolute;
+  float: right;
+  top:500px;
+  right: 0px;
+  height: 50%;
+ }
 
 

@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html>
 <title>Carrucel</title>
+
 <head>
   <link rel="stylesheet" href="styles.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <script type="module" src="script.js"></script>
+  <script type="module">
+    var audio = document.querySelector('audio');
+    audio.volume = 0.5; // establece el volumen a la mitad del máximo
+  </script>
 </head>
 <header>
-<h1>Esto es un carrucel de fotos</h1>
-<div class="carousel">
-<img  src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06571301.png">
-<img  src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07954940.png">
-<img  src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07954878.png">
-<img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07954909.png">
-</div>
+  <h1>Esto es un carrucel de fotos</h1>
+  <div class="carousel left-section">
+    <img  src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06571301.png">
+    <img  src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07954940.png">
+    <img  src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07954878.png">
+    <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07954909.png">
+  </div>
+  <div class="left-section lista-left">
+    <h1>HP Laptop 15-ef2520la (6N1A9LA)</h1>
+    <ul>
+      <li>Sistema operativo: Windows 11 Home Single Language</li>
+      <li>Familia del procesador: Procesador AMD Ryzen™ 5</li>
+      <li>Procesador: AMD Ryzen™ 5 5500U (velocidad de ráfaga máxima de hasta 4,0 GHz, 8 MB de caché L3, 6 núcleos y 12
+        subprocesos)</li>
+      <li>Gráficos Integradas: Gráficos AMD Radeon™</li>
+      <li>Memoria: 8 GB de RAM DDR4-3200 MHz (1 x 8 GB) (Velocidades de transferencia de hasta 3200 MT/s) </li>
+      <li>Almacenamiento interno: Unidad de estado sólido PCIe® NVMe™ M.2 de 256 GB
+      </li>
+    </ul>
+  </div>
+  <div class="carousel1 right-section">
+    <img  src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06375981.png">
+    <img  src="https://in-files.apjonlinecdn.com/landingpages/content-pages/visid-rich-content/hp-laptop-15s/images/desktop_laptop.png">
+    <img  src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07964109.png">
+    <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08393101.png">
+  </div>
+  <div class="right-section lista-right">
+    <h1>HP Laptop 14-dq2021la (3V834LA)</h1>
+    <ul>
+      <li>Sistema operativo: Windows 11 Home Single Language</li>
+      <li>Familia del procesador: Procesador Intel® Core™ i3 de 11.ª generación</li>
+      <li>Procesador: Intel® Core™ i3-1115G4 (hasta 4,1 GHz con tecnología Intel® Turbo Boost, 6 MB de caché L3, 2
+        núcleos y 4 subprocesos)</li>
+      <li>Gráficos: Integrada, Gráficos Intel® UHD</li>
+      <li>Memoria: 4 GB de RAM DDR4-3200 MHz (1 x 4 GB) </li>
+      <li>Almacenamiento interno: Unidad de estado sólido PCIe® NVMe™ M.2 de 256 GB
+      </li>
+    </ul>
+  </div>
 </header>
+<audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+" autoplay loop></audio>
+
 <body>
-<nav>
-<a class="enlace" href="/" aria-current="page">Home</a>
-</nav>
-</body>
+
+  <body>
+    <nav>
+      <a class="enlace" href="/" aria-current="page">Home</a>
+    </nav>
+  </body>
+
 </html>
