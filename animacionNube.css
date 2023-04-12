@@ -1,0 +1,51 @@
+.cloud {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  height: 50px;
+  position: relative;
+  width: 80px;
+  animation: cloud 15s infinite linear;
+}
+
+.cloud:before,
+.cloud:after {
+  background-color: rgb(255, 255, 255);
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.cloud:before {
+  left: -20px;
+  top: -10px;
+}
+
+.cloud:after {
+  right: -20px;
+  top: -20px;
+}
+
+@keyframes cloud {
+/*  manera 1
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(2300%);
+  }*/
+/*manera 2*/
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(100vw + 80px));
+  }
+}
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: rgb(6, 147, 172);
+}
