@@ -141,7 +141,7 @@ right: 5px;
 .left-section {
   width: 50%;
   float: left;
-  background-color: #f2f2f2;
+  background-color: lightskyblue;
   height: 100%;
 }
 
@@ -149,7 +149,7 @@ right: 5px;
 .right-section {
   width: 50%;
   float: right;
-  background-color: #ccc;
+  background-color: lightskyblue;
   height: 100%;
 }
 /*informacion de la lista en la parte izquierda*/
@@ -168,4 +168,28 @@ right: 5px;
   height: 50%;
  }
 
+.impar li:nth-child(odd){
+background-color: #2196f3;
+}
 
+.par li:nth-child(even){
+  background-color: #6bbef9;
+}
+/*multiplos de 4*/
+li:nth-child(4n){
+  font-weight: bold;
+  text-decoration: underline;
+}
+/*impar*/
+li:nth-child(odd){
+  background-color: #f2f2f2bd;
+}
+/*par*/
+li:nth-child(even){
+  background-color: #d4d4d4a8;
+}
+/*numero 6 de la lista*/
+li:nth-child(6){
+  font-weight: bold;
+  text-decoration: underline;
+}
