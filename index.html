@@ -4,20 +4,36 @@
 	<title>Mi página de ejemplo</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
+  <script type="module" src="dinamicScript.js"></script>
   <link rel="stylesheet" href="styles.css" />
+  <script>
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      alert("La geolocalización no está soportada por este navegador.");
+    }
+  }
+  
+  function showPosition(position) {
+    console.log("Latitud: " + position.coords.latitude +
+    " Longitud: " + position.coords.longitude);
+  }
+  </script>
 </head>
 <body>
 	<header>
-		<h1>Bienvenido a mi página</h1>
+		<h1 id="titulo1">Bienvenido a mi página</h1>
 		<!-- se encarga de poner una imagen y rotarla en 360 grados -->
     <img class="rotacion" src="https://cataas.com/cat" alt="Mi imagen animada" id="mi-elemento">
 		<nav>
-			<ul>
+			<ul id="menu">
 				<li><a href="/carrucel.html" aria-current="page">Pagina carrucel</a></li>
         <li><a href="/" aria-current="page">Home</a></li>
         <li><a href="/page2.html" aria-current="page">Pagina Video</a></li>
 				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" aria-current="page">Pagina Link</a></li>
         <li><a href="/nube.html" aria-current="page">Nube</a></li>
+        <li><a onclick="getLocation()" aria-current="page">Localizacion</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -29,7 +45,9 @@
 		</section>
 		<section>
 			<h2>Mis habilidades</h2>
+      <button id="addLink">Agregar Link</button>
 </body>
+<aside>
 			<ul>
 				<li>HTML5</li>
 				<li>CSS3</li>
@@ -44,6 +62,7 @@
         <li>Unity</li>
         <li>C#</li>
 			</ul>
+</aside>
 		</section>
 		<nav>
 	<!-- pone una imagen en este caso la de google -->

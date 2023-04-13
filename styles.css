@@ -193,3 +193,15 @@ li:nth-child(6){
   font-weight: bold;
   text-decoration: underline;
 }
+.new_size{
+  font-size:xx-large;
+}
+@keyframes desplazar{
+  from{transform: translateX(-100%);}
+  to{transform: translateX(0);}
+}
+
+.desplazar{
+animation-name:desplazar;
+animation-duration:0s;
+}
